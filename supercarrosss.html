@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Carros</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos Gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+        }
+
+        header {
+            width: 100%;
+            background-color: #222;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        header h1 .super {
+            color: blue;
+        }
+
+        header h1 .carros {
+            color: red;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 100px; /* Espaço para o header fixo */
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            color: #000;
+            width: 300px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card p {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        /* Seção de Localização */
+        #localizacao {
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        #localizacao h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .localizacoes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .localizacao {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            color: #fff;
+            width: 300px;
+            text-align: center;
+        }
+
+        .localizacao h3 {
+            margin-bottom: 10px;
+        }
+
+        .localizacao .redes-sociais a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .localizacao .redes-sociais a:hover {
+            text-decoration: underline;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: static;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1><span class="super">Super</span> <span class="carros">Carros</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#localizacao">Localizações</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Produtos -->
+    <section id="produtos">
+        <div class="container">
+            <div class="card">
+                <button class="redirect-button" onclick="location.href='loja1.html';">
+                    <img src="WhatsApp Image 2024-11-20 at 19.10.44.jpeg" alt="Loja 1">
+                </button>
+                <p><strong>Super Carros 1 - Ingleses</strong></p>
+                <p>R. Intendente João Nunes Vieira, 580 Ingleses do Rio Vermelho - Florianópolis/SC</p>
+            </div>
+            <div class="card">
+                <button class="redirect-button" onclick="location.href='loja2.html';">
+                    <img src="WhatsApp Image 2024-11-20 at 19.08.32.jpeg" alt="Loja 2">
+                </button>
+                <p><strong>Super Carros 2 - Vargem Grande</strong></p>
+                <p>R. Armando Calil Bulos, 410 Vargem Grande - Florianópolis/SC</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Localização -->
+    <section id="localizacao">
+        <h2>Localizações</h2>
+        <div class="localizacoes">
+            <div class="localizacao">
+                <h3>Loja 1 - Ingleses</h3>
+                <p>Endereço: R. Intendente João Nunes Vieira, 580 Ingleses do Rio Vermelho - Florianópolis/SC</p>
+                <p>Telefone: (48) 3369-9240</p>
+                <div class="redes-sociais">
+                    <a href="https://www.facebook.com/SupercarrosFloripa" target="_blank">Facebook</a> |
+                    <a href="https://www.instagram.com/supercarros_floripa/" target="_blank">Instagram</a>
+                </div>
+            </div>
+            <div class="localizacao">
+                <h3>Loja 2 - Vargem Grande</h3>
+                <p>Endereço: R. Armando Calil Bulos, 410 Vargem Grande - Florianópolis/SC</p>
+                <p>Telefone: (48) 3369-9240</p>
+                <div class="redes-sociais">
+                    <a href="https://www.facebook.com/supercarros" target="_blank">Facebook</a> |
+                    <a href="https://www.instagram.com/supercarros" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato">
+        <div class="contact-section">
+            <h2>Entre em Contato</h2>
+            <p>Telefone:  (48) 3369-9240</p>
+         <p>Whatsapp: (48) 3369-9240</p>
+            <p>Email: supercarrosfloripa@gmail.com</p>
+       
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Super Carros - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
